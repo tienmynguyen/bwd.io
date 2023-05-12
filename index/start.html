@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 
-<body>
+<body style="background-color: #1c1e1e;">
     <!-- navbar -->
 
     <nav class="navbar navbar-expand-lg  navbar-dark bg-dark">
@@ -64,7 +64,7 @@
         padding-top: 1rem;">
         <div class="container py-5">
             <div class="row py-4">
-                <div id="title2" class="col-12 col-lg-5 text-center pt-5 " style="z-index: 10; ">
+                <div id="title2" class="col-12 col-lg-5 text-center" style="z-index: 10; ">
                     <h1 style="font-size: 3.5rem; color: #ff8383">
                         Expand your mind
                     </h1>
@@ -73,8 +73,8 @@
                     </h2>
                     <button type="button " class="btn btn-outline-light mt-4">Read now</button>
                 </div>
-                <div class="col-md-3 pt-5 ">
-                    <img src="/images/book1.png" alt="" class="object-fit-cover col-md-12 d-none d-lg-block">
+                <div class="col-md-3 pt-5 " style="z-index: 10;">
+                    <img id="img1" src="/images/—Pngtree—book learning stationery combination map_5506167.png" alt="" class="object-fit-cover col-md-12 d-none d-lg-block">
                 </div>
                 <div class="col-md-3 pt-5 ">
                     <video id="video1" loop src="/videos/Thiết kế chưa có tên (3).mp4" class="object-fit-cover col-md-12 d-none d-lg-block" autoplay style="    margin-top: -7rem;
@@ -84,8 +84,87 @@
             </div>
 
         </div>
+        <center>
+            <div id="main2" class=" row g-2 ">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card " style="max-width: 540px; height: 160px;">
+                        <div class="row g-0">
+                            <div class="col-4">
+                                <img src="/images/read.png" class="img-fluid " alt="...">
+                            </div>
+                            <div class="col-8 ">
+                                <div class="card-body">
+                                    <h5 class="card-title">Read Free Library Books Online</h5>
+                                    <p class="card-text"></p>
+                                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card " style="max-width: 540px; height: 160px;">
+                        <div class="row g-0">
+                            <div class="col-4">
+                                <img src="/images/track.png" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-8 ">
+                                <div class="card-body">
+                                    <h5 class="card-title">Keep Track of your Favorite Books</h5>
+                                    <p class="card-text"></p>
+                                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card " style="max-width: 540px; height: 160px;">
+                        <div class="row g-0">
+                            <div class="col-4 ">
+                                <img src="/images/library_explorer.png" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-8 ">
+                                <div class="card-body">
+                                    <h5 class="card-title">Try the virual Library Explorer</h5>
+                                    <p class="card-text"></p>
+                                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card " style="max-width: 540px; height: 160px;">
+                        <div class="row g-0">
+                            <div class=" col-4">
+                                <img src="/images/fulltext.png" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-8 ">
+                                <div class="card-body">
+                                    <h5 class="card-title">Try Fulltext Search</h5>
+                                    <p class="card-text"></p>
+                                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+        </center>
 
     </section>
+
+
+    <!-- show case 2 -->
 
 
 
@@ -100,7 +179,9 @@
         let k = document.getElementById('k');
         let l = document.getElementById('light');
         let v = document.getElementById('video1');
-        let t = document.getElementById('title1');
+        let t = document.getElementById('title2');
+        let i = document.getElementById('img1');
+        let main2 = document.getElementById('main2');
         window.addEventListener('scroll', function()
 
             {
@@ -108,10 +189,26 @@
                 b.style.marginTop = -value * 2 + '%';
                 o.style.marginTop = -value * 1 + '%';
                 o2.style.marginTop = -value * 0.5 + '%';
-                k.style.marginTop = -value * 0.1 + '%';
-                l.style.opacity = 50 - value * 0.2 + '%';
+                k.style.marginTop = -value * 0.2 + '%';
+                l.style.opacity = 50 - value * 0.3 + '%';
                 v.style.opacity = 100 - value * 1.5 + '%';
-                t.style.marginTop = value + '%';
+                i.style.opacity = 100 - value * 1.5 + '%';
+
+                if (value > 200) {
+                    t.style.paddingTop = 25 + 'rem';
+
+                } else {
+                    t.style.paddingTop = 17 + 'rem';
+                }
+
+                if (value > 200) {
+                    main2.style.display = 'flex';
+                    main2.style.opacity = value * 0.3 + '%';
+
+                } else {
+                    main2.style.display = 'none';
+                }
+
             })
     </script>
 
