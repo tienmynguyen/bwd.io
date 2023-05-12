@@ -51,33 +51,33 @@
 
     <!-- show case -->
     <section class="main">
-        <div class="head col-6 d-none d-md-flex" style="position: absolute;">
+        <div class="head col-6 d-none d-lg-flex" style="position: absolute; z-index: 9;">
             <img src="/images/b.png" alt="" id="b">
             <img src="/images/o.png" alt="" id="o">
             <img src="/images/o2.png" alt="" id="o2">
             <img src="/images/k.png" alt="" id="k">
         </div>
-        <img id="light" class=" light col-12 d-none d-md-block" src="/images/light.png" alt="" style="       position: absolute;
+        <img id="light" class=" light col-12 d-none d-lg-block" src="/images/light.png" alt="" style="       position: absolute;
         opacity: 50%;
         margin-top: 0px;
         padding-right: 1rem;
         padding-top: 1rem;">
         <div class="container py-5">
             <div class="row py-4">
-                <div class="col-md-5 text-center" style="z-index: 10; padding-top: 20rem;">
-                    <h1 style="font-size: 3.5rem;">
+                <div id="title2" class="col-12 col-lg-5 text-center pt-5 " style="z-index: 10; ">
+                    <h1 style="font-size: 3.5rem; color: #ff8383">
                         Expand your mind
                     </h1>
-                    <h2>
+                    <h2 style="color: #ffcbcb;">
                         read a book
                     </h2>
                     <button type="button " class="btn btn-outline-light mt-4">Read now</button>
                 </div>
                 <div class="col-md-3 pt-5 ">
-                    <img src="/images/book1.png" alt="" class="object-fit-cover col-md-12 d-none d-md-block">
+                    <img src="/images/book1.png" alt="" class="object-fit-cover col-md-12 d-none d-lg-block">
                 </div>
                 <div class="col-md-3 pt-5 ">
-                    <video id="video1" loop src="/videos/Thiết kế chưa có tên (3).mp4" class="object-fit-cover col-md-12 d-none d-md-block" autoplay style="    margin-top: -7rem;
+                    <video id="video1" loop src="/videos/Thiết kế chưa có tên (3).mp4" class="object-fit-cover col-md-12 d-none d-lg-block" autoplay style="    margin-top: -7rem;
                     transform: scaleX(-1); margin-top: 1rem;"></video>
                 </div>
 
@@ -100,6 +100,7 @@
         let k = document.getElementById('k');
         let l = document.getElementById('light');
         let v = document.getElementById('video1');
+        let t = document.getElementById('title1');
         window.addEventListener('scroll', function()
 
             {
@@ -110,6 +111,7 @@
                 k.style.marginTop = -value * 0.1 + '%';
                 l.style.opacity = 50 - value * 0.2 + '%';
                 v.style.opacity = 100 - value * 1.5 + '%';
+                t.style.marginTop = value + '%';
             })
     </script>
 
