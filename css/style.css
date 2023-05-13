@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
 .main {
     background-color: rgb(28, 30, 30);
     background-size: cover;
@@ -72,4 +73,27 @@
     background-color: #1c1e1e;
     display: none;
     border-radius: 20px;
+}
+
+.slider {
+    transform: translateY(-10vh);
+}
+
+.team {
+    color: white;
+    text-align: center;
+    font-family: 'Rancho', cursive;
+    font-style: italic;
+}
+
+.team img {
+    width: 4rem;
+}
+
+.team h5 {
+    padding: 5px 0px;
+}
+
+.team p {
+    padding-bottom: 20px;
 }
