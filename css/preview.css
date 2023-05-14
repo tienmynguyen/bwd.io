@@ -1,0 +1,11 @@
+.baner1:hover {
+    opacity: 80%;
+}
+
+.icon1 {
+    border-radius: 5px;
+}
+
+.icon1:hover {
+    background-color: rgb(237, 214, 185);
+}
