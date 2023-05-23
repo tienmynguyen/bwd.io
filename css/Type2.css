@@ -96,14 +96,6 @@
     font-weight: 700;
 }
 
-#more {
-    margin-left: 53rem;
-    color: white;
-    text-decoration: none;
-    font-size: larger;
-    font-weight: 700;
-}
-
 @media screen and (min-width: 1000px) {
     #card-link-title {
         margin-left: 3rem;
@@ -152,4 +144,8 @@
         font-size: larger;
         font-weight: 700;
     }
+}
+
+.slick-track:hover .object-card-images:not(:hover) {
+    opacity: 0.5;
 }

@@ -90,8 +90,10 @@
         <div class="container py-5">
             <div class="row py-4">
                 <div id="title2" class="col-12 col-lg-5 text-center" style="z-index: 10; ">
-                    <h1 style="font-size: 3.5rem; color: #ff8383">
-                        Expand your mind
+                    <h1 class="titlemain">
+                        <span>
+                            Expand your mind
+                        </span>
                     </h1>
                     <h2 style="color: #ffcbcb;">
                         read a book
@@ -112,11 +114,6 @@
 
 
 
-
-
-
-
-
     </section>
     <div>
         <!-- 4 of book -->
@@ -130,7 +127,7 @@
                         </div>
                         <div class="col-8">
                             <div class="card-body">
-                                <h5 class="card-title">Read Free Library Books Online</h5>
+                                <h5 class="card-title">Thư viện sách trực tuyến miễn phí</h5>
                             </div>
                         </div>
                     </div>
@@ -145,7 +142,7 @@
                         </div>
                         <div class="col-8">
                             <div class="card-body">
-                                <h5 class="card-title">Keep Track of your Favorite Books</h5>
+                                <h5 class="card-title">Theo dõi những cuốn sách yêu thích của bạn</h5>
                             </div>
                         </div>
                     </div>
@@ -160,7 +157,7 @@
                         </div>
                         <div class="col-8">
                             <div class="card-body">
-                                <h5 class="card-title">Try the virual Library Explorer</h5>
+                                <h5 class="card-title">Trải nghiệm trình khám phá thư viện</h5>
                             </div>
                         </div>
                     </div>
@@ -175,7 +172,7 @@
                         </div>
                         <div class="col-8">
                             <div class="card-body">
-                                <h5 class="card-title">Try Fulltext Search</h5>
+                                <h5 class="card-title">Công cụ tìm kiếm toàn văn</h5>
                             </div>
                         </div>
                     </div>
@@ -445,7 +442,7 @@
             <!-- Card object  -->
             <div class="object-card-images">
                 <!-- mot card -->
-                <a href="/index/book.html">
+                <a href="book.html">
                     <div>
                         <img src="/Images/img1.jpg" alt="." class="card-img-top img-avatar" />
                     </div>
@@ -951,11 +948,41 @@
             <!-- end object card -->
         </div>
     </div>
-    <center>
-        <div class="banner1 col-10" style="background-color: #ff8383; height: 200px;">
+    <div style="height: 30px;">
 
+    </div>
+    <div class="row d-none d-lg-flex justify-content-center">
+        <div class="banner1 col-10" style=" height: 500px;">
+            <a href="#">
+                <div class="card3d">
+                    <div class="wrapper">
+                        <img src="/images/img7.jpg" alt="" class="cover-image">
+                    </div>
+                    <img src="/images/hoangtube.png" alt="" class="character">
+                </div>
+            </a>
+            <div style="color: white;">
+                <br> <br>
+                <h3>
+                    Cuốn sách có lượt đọc nhiều nhất trong tuần
+                </h3>
+                <h1>
+                    Hoàng tử bé
+                </h1>
+                <p>
+                    Hoàng tử bé là một cuốn sách kì lạ được viết bởi một tác giả kì lạ. Saint Exupéry đâu phải là một nhà văn thường, mà là một nhà văn phi công! Ông sáng tác Hoàng tử bé trong thời kì lưu vong khi nước Pháp bị chiếm đóng, ông không được bay theo đúng nghĩa.
+                    Cuốn sách là một cuộc hành trình đi tìm lại trí tưởng tượng của bản thân mình, mà chính tác giả đã bỏ quên trong quá khứ. Ông khẳng định, thế giới của trẻ con khác với thế giới của người lớn.
+                </p>
+                <br>
+                <p>
+                    Cuốn sách hẳn là sự nhận thức vỡ òa của tác giả trong những năm tháng lưu vong, khi ông nhận ra rằng cuộc sống của trẻ con tươi đẹp và giàu có biết nhường nào, bản thân ông lại quên đi bản thân mình cũng từng là trẻ con, vì vậy, có lẽ ông đã tìm thấy
+                    được bản thân mình bên trong Hoàng tử bé. Ta có thể thấy, cuốn sách thể hiện sự cố gắng quay trở về với bản thể con người một cách nguyên sơ nhất, nhìn nhận sự vật sự việc đầy hình ảnh và màu sắc mà người lớn ít khi nào thấy được,
+                    dù họ cũng từng là trẻ con.
+                </p>
+            </div>
         </div>
-    </center>
+    </div>
+
     <!-- end kind of book -->
     <!-- one kind of book -->
     <div>
@@ -3185,9 +3212,13 @@
 
                 if (value > 200) {
                     t.style.paddingTop = 25 + 'rem';
+                    v.style.display = 'none';
+                    i.style.display = 'none';
 
                 } else {
                     t.style.paddingTop = 17 + 'rem';
+                    v.style.display = 'block';
+                    i.style.display = 'block';
                 }
 
 
