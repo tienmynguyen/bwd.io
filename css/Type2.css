@@ -144,8 +144,7 @@
         font-size: larger;
         font-weight: 700;
     }
-}
-
-.slick-track:hover .object-card-images:not(:hover) {
-    opacity: 0.5;
+    .slick-track:hover .object-card-images:not(:hover) {
+        opacity: 0.5;
+    }
 }

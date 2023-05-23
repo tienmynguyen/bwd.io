@@ -46,10 +46,8 @@ $(document).ready(function () {
     slidesToShow: 6,
     slidesToScroll: 6,
     infinite: false,
-    prevArrow:
-      "<button type='button' class='slick-prev pull-left slickarrow'><i class='fa fa-angle-left' aria-hidden='true'>&#x3c;</i></button>",
-    nextArrow:
-      "<button type='button' class='slick-next pull-right slickarrow'><i class='fa fa-angle-right' aria-hidden='true'>&#x3e;</i></button>",
+    prevArrow: false,
+    nextArrow: false,
     responsive: [
       {
         breakpoint: 1025,
