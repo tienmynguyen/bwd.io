@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Rancho&display=swap");
+.main {
+    background-color: rgb(28, 30, 30);
+    background-size: cover;
+    /* height: 150vh; */
+    background-position: 50% 50%;
+    width: 100%;
+    /* position: relative; */
+}
+
+.main h1 {
+    color: white;
+    font-size: 4 rem;
+    font-weight: 700;
+}
+
+.main h2 {
+    color: white;
+    font-size: 3 rem;
+    font-weight: 700;
+}
+
+.pt-5 {
+    padding-top: 10rem !important;
+}
+
+.pt-5 video {
+    size: 10%;
+}
+
+.head img {
+    position: absolute;
+    animation: animation 3s infinite linear;
+}
+
+.head img:nth-child(1) {
+    animation-delay: 0.5s;
+}
+
+.head img:nth-child(3) {
+    animation-delay: 1.5s;
+}
+
+.head img:nth-child(4) {
+    animation-delay: 1s;
+}
+
+@keyframes animation {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+#title2 {
+    padding-top: 50rem;
+}
+
+@media screen and (max-width: 900px) {
+    #title2 {
+        margin-top: -200px;
+    }
+}
+
+#main2 {
+    width: 90vw;
+    /* transform: translateY(-10vh); */
+    background-color: #1c1e1e;
+    /* display: none; */
+    border-radius: 20px;
+}
+
+.slider {
+    transform: translateY(-10vh);
+}
+
+.team {
+    color: white;
+    text-align: center;
+    font-family: "Rancho", cursive;
+    font-style: italic;
+}
+
+.team img {
+    width: 4rem;
+}
+
+.team h5 {
+    padding: 5px 0px;
+}
+
+.team p {
+    padding-bottom: 20px;
+}
+
+.card {
+    background-color: antiquewhite;
+    margin: 0 5px;
+}
+
+.cursor {
+    z-index: 999;
+    position: fixed;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    pointer-events: none;
+    box-shadow: 0 0 20px white, 0 0 60px white, 0 0 100px white;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+body {
+    cursor: none;
+}
+
+.cursor:before {
+    content: '';
+    position: absolute;
+    background-color: white;
+    width: 60px;
+    height: 60px;
+    opacity: 0.2;
+    transform: translate(-25%, -25%);
+    border-radius: 50%;
+}
+
+@media screen and (min-width: 1000px) {
+    .titlemain {
+        color: #484848;
+        font-size: 3rem;
+        font-weight: bold;
+        font-family: monospace;
+        letter-spacing: 7px;
+        cursor: pointer
+    }
+    .titlemain span {
+        transition: .5s linear
+    }
+    .titlemain:hover span {
+        color: #fff;
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
+    }
+}
+
+:root {
+    --card-height: 450px;
+    --card-width: calc(var(--card-height)/1.5);
+}
+
+.banner1 {
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: #1c1e1e;
+}
+
+.card3d {
+    width: var(--card-width);
+    height: var(--card-height);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    perspective: 2500px;
+    margin: 0 50px;
+}
+
+.card3d img {
+    border-radius: 5px;
+}
+
+.cover-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.wrapper {
+    transform: all 0.5s;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+.card3d:hover .wrapper {
+    transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
+    box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+    opacity: 0.7;
+}
+
+.wrapper::before,
+.wrapper::after {
+    content: "";
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s;
+    position: absolute;
+}
+
+.wrapper::before {
+    top: 0;
+    height: 100%;
+    background-image: linear-gradient( to top, transparent 46%, rgba(12, 13, 19, 0.5) 68%, rgba(12, 13, 19, 0.5) 97%);
+}
+
+.card3d:hover .wrapper::before,
+.wrapper::after {
+    opacity: 1;
+}
+
+.card3d:hover .wrapper::after {
+    height: 120px;
+}
+
+.character {
+    width: 100%;
+    opacity: 0;
+    transition: all 0.5s;
+    position: absolute;
+    z-index: 1;
+}
+
+.card3d:hover .character {
+    opacity: 1;
+    transform: translate3d(0%, -30%, 100px);
+}
