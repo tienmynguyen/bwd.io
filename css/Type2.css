@@ -96,6 +96,11 @@
     font-weight: 700;
 }
 
+#card-link-title:hover {
+    color: #fff;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
+}
+
 @media screen and (min-width: 1000px) {
     #card-link-title {
         margin-left: 3rem;
@@ -112,6 +117,10 @@
     font-family: "Rancho", cursive;
     font-style: italic;
     margin: 10px 20px;
+}
+
+.teamkindof:hover {
+    scale: 1.2;
 }
 
 .teamkindof img {
@@ -154,4 +163,8 @@
     .slick-track:hover .object-card-images:not(:hover) {
         opacity: 0.5;
     }
+}
+
+.card:hover {
+    background-color: rgb(242, 207, 161);
 }

@@ -20,7 +20,7 @@
 </head>
 
 <body style="background-color: #1c1e1e; overflow-x: hidden; ">
-    <div class="cursor"></div>
+    <div class="cursor d-none d-lg-block"></div>
     <!-- navbar -->
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
@@ -61,6 +61,16 @@
             </div>
         </div>
     </nav>
+    <!-- scroll to top -->
+    <a href="#">
+        <div id="totop">
+            <div style="width: 50px; height: 50px; background-color: #D3C0F9; position: fixed; bottom: 20px; border-radius: 50%;
+            right: 30px; z-index: 99; display: flex; align-items:center ; justify-content: center;">
+                <img src="/images/arrow.png" style="height: 30px; width: 30px; transform: rotate(-90deg); margin-top: -4px;" alt="">
+            </div>
+        </div>
+    </a>
+
 
     <!-- show case -->
     <section class="main">
@@ -102,7 +112,7 @@
                     <h2 style="color: #ffcbcb;">
                         read a book
                     </h2>
-                    <button type="button " class="btn btn-outline-light mt-4">Read now</button>
+                    <button type="button " class="btn btn-outline-light mt-4"><a class="btn4" style="text-decoration: none; color: white;" href="#tele1">Read now</a></button>
                 </div>
                 <div class="col-md-3 pt-5 d-none d-lg-block" style="z-index: 10;">
                     <img id="img1" src="/images/bookimg1.png" alt="" class="object-fit-cover col-md-12 d-none d-lg-block">
@@ -112,11 +122,52 @@
                   transform: scaleX(-1); margin-top: 1rem;"></img>
                 </div>
 
+                <div id="chartarea" class=" d-none d-lg-flex row justify-content-center">
+                    <div class="col-0 col-lg-5"></div>
+                    <div style="color: white; position: absolute; margin-top: -16rem;">
+                        <h3 id="tele1" style="text-align: end; margin-right: 7rem;">tổng sách lên tới <span style="color: #f88686;">96.000</span> cuốn và được cập nhật liên tục</h3>
+                    </div>
+                    <div class="chart col-10 col-lg-7 d-flex align-items-center gap-4 gap-md-5 gap-lg-2 gap-xl-5 px-5" style="background-color: #82b0a2; height: 200px; margin-top: -13rem; border-radius: 5px; overflow: hidden;">
+
+                        <div class="col-3 " style="height: 170px; width: 170px; ">
+                            <div class=" pie animate" style="--p:75;--c: #12c2e9"> 75%</div>
+                        </div>
+
+                        <div class="col-3" style="height: 170px; width: 170px;  ">
+                            <div class=" pie animate" style="--p:90;--c:#c471ed"> 90%</div>
+                        </div>
+
+                        <div class="col-3" style="height: 170px; width: 170px;  ">
+                            <div class=" pie animate" style="--p:69;--c: #f64f59"> 69%</div>
+                        </div>
+                        <div class="col-1" style="height: 200px; background-color: #fcffa7; "></div>
+                    </div>
+                    <div class="row justify-content-center gap-2 gap-lg-2 gap-xl-5 " style="position: absolute;">
+                        <div class="col-0 col-lg-3 mx-4"></div>
+                        <div class="col-2" style="height: 170px; width: 170px; color: white;">
+                            <h5 style="text-align: center;">
+                                sách nói
+                            </h5>
+                        </div>
+
+                        <div class="col-3" style="height: 170px; width: 170px;color: white; ">
+                            <h5 style="text-align: center;">
+                                sách đọc
+                            </h5>
+                        </div>
+
+                        <div class="col-3" style="height: 170px; width: 170px;color: white;  ">
+                            <h5 style="text-align: center;">
+                                videos
+                            </h5>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </div>
 
-
+        </div>
 
     </section>
     <div>
@@ -319,117 +370,127 @@
     </div> -->
 
     <!-- topic of book -->
-    <div>
-        <div class="cardslider-kindof p-5">
-            <!-- Card object  -->
-            <div class="teamkindof">
-                <img src="/images/art.svg" alt="" class="img-fluid" />
-                <h5>Nghệ thuật</h5>
-                <p>69,960 books</p>
-            </div>
-            <!-- end object card -->
+    <div class="row justify-content-center">
+        <div class="col-9" style="color: white;">
+            <h5>
+                Đa dạng với 14 chủ đề về nhiều lĩnh vực
+            </h5>
+        </div>
+    </div>
 
-            <!-- Card object  -->
-            <div class="teamkindof">
-                <img src="/images/science_fiction.svg" alt="" class="img-fluid" />
-                <h5>Khoa học viễn tưởng</h5>
-                <p>69,960 books</p>
-            </div>
-            <!-- end object card -->
+    <div class="row justify-content-center">
+        <div class="topic col-9">
+            <div class="cardslider-kindof pt-2">
+                <!-- Card object  -->
+                <div class="teamkindof">
+                    <img src="/images/art.svg" alt="" class="img-fluid" />
+                    <h5>Nghệ thuật</h5>
+                    <p>69,960 books</p>
+                </div>
+                <!-- end object card -->
 
-            <!-- Card object  -->
-            <div class="teamkindof">
-                <img src="/images/fantasy.svg" alt="" class="img-fluid" />
-                <h5>Tưởng tượng</h5>
-                <p>69,960 books</p>
-            </div>
-            <!-- end object card -->
+                <!-- Card object  -->
+                <div class="teamkindof">
+                    <img src="/images/science_fiction.svg" alt="" class="img-fluid" />
+                    <h5>Khoa học viễn tưởng</h5>
+                    <p>69,960 books</p>
+                </div>
+                <!-- end object card -->
 
-            <!-- Card object  -->
-            <div class="teamkindof">
-                <img src="/images/biographies.svg" alt="" class="img-fluid" />
-                <h5>tiểu sử</h5>
-                <p>69,960 books</p>
-            </div>
-            <!-- end object card -->
+                <!-- Card object  -->
+                <div class="teamkindof">
+                    <img src="/images/fantasy.svg" alt="" class="img-fluid" />
+                    <h5>Tưởng tượng</h5>
+                    <p>69,960 books</p>
+                </div>
+                <!-- end object card -->
 
-            <!-- Card object  -->
-            <div class="teamkindof">
-                <img src="/images/romance.svg" alt="" class="img-fluid" />
-                <h5>lãng mạn</h5>
-                <p>69,960 books</p>
-            </div>
-            <!-- end object card -->
+                <!-- Card object  -->
+                <div class="teamkindof">
+                    <img src="/images/biographies.svg" alt="" class="img-fluid" />
+                    <h5>tiểu sử</h5>
+                    <p>69,960 books</p>
+                </div>
+                <!-- end object card -->
 
-            <!-- Card object  -->
-            <div class="teamkindof">
-                <img src="/images/children.svg" alt="" class="img-fluid" />
-                <h5>Trẻ em</h5>
-                <p>69,960 books</p>
-            </div>
-            <!-- end object card -->
+                <!-- Card object  -->
+                <div class="teamkindof">
+                    <img src="/images/romance.svg" alt="" class="img-fluid" />
+                    <h5>lãng mạn</h5>
+                    <p>69,960 books</p>
+                </div>
+                <!-- end object card -->
 
-            <!-- Card object  -->
-            <div class="teamkindof">
-                <img src="/images/history.svg" alt="" class="img-fluid" />
-                <h5>Lịch sử</h5>
-                <p>69,960 books</p>
-            </div>
-            <!-- end object card -->
+                <!-- Card object  -->
+                <div class="teamkindof">
+                    <img src="/images/children.svg" alt="" class="img-fluid" />
+                    <h5>Trẻ em</h5>
+                    <p>69,960 books</p>
+                </div>
+                <!-- end object card -->
 
-            <!-- Card object  -->
-            <div class="teamkindof">
-                <img src="/images/medicine (1).svg" alt="" class="img-fluid" />
-                <h5>Y học</h5>
-                <p>69,960 books</p>
-            </div>
-            <!-- end object card -->
+                <!-- Card object  -->
+                <div class="teamkindof">
+                    <img src="/images/history.svg" alt="" class="img-fluid" />
+                    <h5>Lịch sử</h5>
+                    <p>69,960 books</p>
+                </div>
+                <!-- end object card -->
 
-            <!-- Card object  -->
-            <div class="teamkindof">
-                <img src="/images/music.svg" alt="" class="img-fluid" />
-                <h5>Âm nhạc</h5>
-                <p>69,960 books</p>
-            </div>
-            <!-- end object card -->
+                <!-- Card object  -->
+                <div class="teamkindof">
+                    <img src="/images/medicine (1).svg" alt="" class="img-fluid" />
+                    <h5>Y học</h5>
+                    <p>69,960 books</p>
+                </div>
+                <!-- end object card -->
 
-            <!-- Card object  -->
-            <div class="teamkindof">
-                <img src="/images/mystery_and_detective_stories.svg" alt="" class="img-fluid" />
-                <h5>Trinh thám</h5>
-                <p>69,960 books</p>
-            </div>
-            <!-- end object card -->
+                <!-- Card object  -->
+                <div class="teamkindof">
+                    <img src="/images/music.svg" alt="" class="img-fluid" />
+                    <h5>Âm nhạc</h5>
+                    <p>69,960 books</p>
+                </div>
+                <!-- end object card -->
 
-            <!-- Card object  -->
-            <div class="teamkindof">
-                <img src="/images/textbooks.svg" alt="" class="img-fluid" />
-                <h5>Sách giáo khoa</h5>
-                <p>69,960 books</p>
-            </div>
-            <!-- end object card -->
+                <!-- Card object  -->
+                <div class="teamkindof">
+                    <img src="/images/mystery_and_detective_stories.svg" alt="" class="img-fluid" />
+                    <h5>Trinh thám</h5>
+                    <p>69,960 books</p>
+                </div>
+                <!-- end object card -->
 
-            <!-- Card object  -->
-            <div class="teamkindof">
-                <img src="/images/recipes.svg" alt="" class="img-fluid" />
-                <h5>Nấu ăn</h5>
-                <p>69,960 books</p>
+                <!-- Card object  -->
+                <div class="teamkindof">
+                    <img src="/images/textbooks.svg" alt="" class="img-fluid" />
+                    <h5>Sách giáo khoa</h5>
+                    <p>69,960 books</p>
+                </div>
+                <!-- end object card -->
+
+                <!-- Card object  -->
+                <div class="teamkindof">
+                    <img src="/images/recipes.svg" alt="" class="img-fluid" />
+                    <h5>Nấu ăn</h5>
+                    <p>69,960 books</p>
+                </div>
+                <!-- end object card -->
+                <!-- Card object  -->
+                <div class="teamkindof">
+                    <img src="/images/religion.svg" alt="" class="img-fluid" />
+                    <h5>Tôn giáo</h5>
+                    <p>69,960 books</p>
+                </div>
+                <!-- end object card -->
+                <!-- Card object  -->
+                <div class="teamkindof">
+                    <img src="/images/science.svg" alt="" class="img-fluid" />
+                    <h5>Khoa học</h5>
+                    <p>69,960 books</p>
+                </div>
+                <!-- end object card -->
             </div>
-            <!-- end object card -->
-            <!-- Card object  -->
-            <div class="teamkindof">
-                <img src="/images/religion.svg" alt="" class="img-fluid" />
-                <h5>Tôn giáo</h5>
-                <p>69,960 books</p>
-            </div>
-            <!-- end object card -->
-            <!-- Card object  -->
-            <div class="teamkindof">
-                <img src="/images/science.svg" alt="" class="img-fluid" />
-                <h5>Khoa học</h5>
-                <p>69,960 books</p>
-            </div>
-            <!-- end object card -->
         </div>
     </div>
 
@@ -970,7 +1031,7 @@
 
     </div>
     <div class="row d-none d-lg-flex justify-content-center">
-        <div class="banner1 col-10" style=" height: 500px;">
+        <div class="banner1 col-10" style=" height: 500px; ">
             <a href="#">
                 <div class="card3d">
                     <div class="wrapper">
@@ -979,7 +1040,7 @@
                     <img src="/images/hoangtube.png" alt="" class="character">
                 </div>
             </a>
-            <div style="color: white ;">
+            <div style="color: white ; z-index: 20; ">
                 <br> <br>
                 <h3>
                     Cuốn sách có lượt đọc nhiều nhất trong tuần
@@ -993,7 +1054,8 @@
                 </p>
                 <br>
                 <p>
-
+                    Trong đôi mắt chúng bao giờ thế giới cũng được nhìn bằng lăng kính của trí tưởng tượng. Cuốn sách chứa đựng tư duy đạo đức sâu xa qua lăng kính của một cậu trai không có nhiều va chạm. Cậu ít có cơ hội tiếp xúc với thế giới bên ngoài, thế giới xung quanh
+                    của cậu nhỏ hẹp cỡ chừng một ngôi nhà, nhưng bên trong cậu chứa đựng những cảm nhận tuyệt vời vượt xa sự tưởng tượng.
                 </p>
             </div>
         </div>
@@ -3312,14 +3374,16 @@
     </div>
 
     <!-- end kind of book -->
-    <center>
-        <div class="banner1 col-10" style="background-color: #ff8383; height: 200px;">
+
+    <div class="row justify-content-center">
+        <div class="banner1 col-10" style="background-color: #ff8383; height: 200px; border-radius: 5px;">
 
         </div>
         <div style="height: 300px;">
 
         </div>
-    </center>
+    </div>
+
 
     <!-- Footer -->
     <footer class="text-center text-lg-start bg-dark text-muted">
@@ -3327,7 +3391,7 @@
         <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
             <!-- Left -->
             <div class="me-5 d-none d-lg-block" style="color: white;">
-                <span>Get connected with us on social networks:</span>
+                <span>Kết nối với chúng tôi qua:</span>
             </div>
             <!-- Left -->
 
@@ -3365,10 +3429,10 @@
                     <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                         <!-- Content -->
                         <h6 class="text-uppercase fw-bold mb-4">
-                            <i class="fas fa-gem me-3"></i>Company name
+                            <i class="fas fa-gem me-3"></i> Book is life
                         </h6>
                         <p>
-                            Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            mở rộng tiềm thức chỉ bằng cách đọc một cuốn sách.
                         </p>
                     </div>
                     <!-- Grid column -->
@@ -3380,7 +3444,7 @@
                             Products
                         </h6>
                         <p>
-                            <a href="#!" class="text-reset">Angular</a>
+                            <a href="#!" class="text-reset"></a>
                         </p>
                         <p>
                             <a href="#!" class="text-reset">React</a>
@@ -3419,12 +3483,12 @@
                     <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                         <!-- Links -->
                         <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-                        <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+                        <p><i class="fas fa-home me-3"></i> Đà nẵng </p>
                         <p>
-                            <i class="fas fa-envelope me-3"></i> info@example.com
+                            <i class="fas fa-envelope me-3"></i> mynt.22it@vku.udn.vn
                         </p>
-                        <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
-                        <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+                        <p><i class="fas fa-phone me-3"></i> +84 64 16 8838</p>
+                        <p><i class="fas fa-print me-3"></i> </p>
                     </div>
                     <!-- Grid column -->
                 </div>
@@ -3435,10 +3499,8 @@
 
         <!-- Copyright -->
         <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-            © 2021 Copyright:
-            <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-        </div>
-        <!-- Copyright -->
+            © 2023 form Ninh Nam
+            <!-- Copyright -->
     </footer>
     <!-- Footer -->
 
@@ -3457,10 +3519,11 @@
         let v = document.getElementById('video1');
         let t = document.getElementById('title2');
         let i = document.getElementById('img1');
+        let chartarea = document.getElementById('chartarea');
         var timeout;
         let main2 = document.getElementById('main2');
 
-
+        let totop = document.getElementById('totop');
 
 
         window.addEventListener('scroll', function()
@@ -3475,14 +3538,15 @@
                 l2.style.opacity = 50 - value * 0.7 + '%';
                 v.style.opacity = 100 - value * 1.5 + '%';
                 i.style.opacity = 100 - value * 1.5 + '%';
+                chartarea.style.opacity = value / 400;
 
                 if (value > 200) {
-                    t.style.paddingTop = 25 + 'rem';
+                    t.style.paddingTop = 27 + 'rem';
 
-
+                    totop.style.display = 'block';
                 } else {
                     t.style.paddingTop = 17 + 'rem';
-
+                    totop.style.display = 'none';
                 }
 
 
