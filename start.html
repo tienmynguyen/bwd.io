@@ -23,7 +23,7 @@
     <div class="cursor d-none d-lg-block"></div>
     <!-- navbar -->
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="z-index: 15;">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Navbar</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,27 +37,15 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Link</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
+                    <div class="d-none d-lg-block" style="width: 40rem;"></div>
                     <li class="nav-item">
-                        <a class="nav-link disabled">Disabled</a>
+                        <form class="d-flex px-lg-5" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
                     </li>
                 </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-5" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success me-5" type="submit">Search</button>
-                </form>
+
             </div>
         </div>
     </nav>
@@ -91,15 +79,7 @@
         padding-right: 1rem;
         padding-top: 1rem;">
 
-        <img class="d-none d-lg-block" src="/images/lamp.png" alt="" style="
-              position: absolute;
-    opacity: 100%;
-    padding-right: 1rem;
-    transform: scaleX(-1);
-    margin-top: -69px;
-    margin-left: 89vw;
-    width: 150px;
-        " />
+        <img class="lamp d-none d-lg-block" src="/images/lamp.png" alt="" />
 
         <div class="container py-5">
             <div class="row py-4">
@@ -112,7 +92,8 @@
                     <h2 style="color: #ffcbcb;">
                         read a book
                     </h2>
-                    <button type="button " class="btn btn-outline-light mt-4"><a class="btn4" style="text-decoration: none; color: white;" href="#tele1">Read now</a></button>
+                    <a class="btn4" style="text-decoration: none; color: white;" href="#tele1"> <button type="button " class="btn btn-outline-light mt-4">Read now</button></a>
+
                 </div>
                 <div class="col-md-3 pt-5 d-none d-lg-block" style="z-index: 10;">
                     <img id="img1" src="/images/bookimg1.png" alt="" class="object-fit-cover col-md-12 d-none d-lg-block">
@@ -1043,7 +1024,7 @@
             <div style="color: white ; z-index: 20; ">
                 <br> <br>
                 <h3>
-                    Cuốn sách có lượt đọc nhiều nhất trong tuần
+                    Cuốn sách có lượt đọc nhiều <span style="color: #f37779;">nhất trong tuần</span>
                 </h3>
                 <h1>
                     Hoàng tử bé
@@ -1070,7 +1051,7 @@
         </div>
     </div>
     <div class="  row justify-content-center mb-5" style="height: 300px; ">
-        <div class="rank col-10 d-flex" style="height: 300px; border-radius: 5px;  overflow-y: scroll; border: 3px solid; ">
+        <div class="rank col-10 d-flex" style="height: 300px; border-radius: 5px;  overflow-y: scroll;">
             <div class="col-1">
                 <center>
                     <div class="numberrank" style="height: 75px; width: 75px; background-color: #B5DDD1;; border-radius: 5px; margin-top: 15px;display: flex;
@@ -3374,15 +3355,16 @@
     </div>
 
     <!-- end kind of book -->
-
     <div class="row justify-content-center">
-        <div class="banner1 col-10" style="background-color: #ff8383; height: 200px; border-radius: 5px;">
-
+        <div class="banner1 col-9" style="">
+            <img src="/images/banner3.jpg" alt="" style="width: 100%; border-radius: 5px;">
         </div>
         <div style="height: 300px;">
 
         </div>
     </div>
+
+
 
 
     <!-- Footer -->
